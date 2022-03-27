@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Declaração CSS --> 
+
+    <link rel="stylesheet" href="css/style-master.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dashboard | Home</title>
+</head>
+<body>
+
+    <!-- Menu Mobile (FAZER) --> 
+
+    <div class="row d-none">
+        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 d-none d-xl-block">  <!-- d-none == Oculta a div && d-xl-block exibe apenas em telas mobile --> 
+            adgdsadsgasdgasd
+        </div>
+    </div>
+
+    <!-- Início Dashboard   --> 
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Início Sidebar --> 
+
+            <div id="div-sidebar" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 d-flex vh-100 d-none d-xl-block">
+                <div id="sidebar-menu">
+                    <div class="d-flex flex-column h-100">
+                        <div id="logo" class="d-flex align-items-center justify-content-center">
+                            <img src="imgs/logo.png" style="width: 45px; height: 45px; margin-top: 10px;"></img>
+                        </div>
+                        <ul id="menu-sidebar" class="list-group align-items-center">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                              </svg> </li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                              </svg></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                              </svg></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fim Sidebar --> 
+
+            <!-- Início Área Central --> 
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 vh-100 align-items-center">
+
+                <!-- Início Cards --> 
+
+                <div id="cards-topo" class="d-flex">
+                    <div id="card" class="d-flex flex-column">
+                        <h3 id="titulo-card">
+                            <svg style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                              </svg> Ranking
+                        </h3>
+                        <span id="texto-card">
+                            Posição<br>
+                            1898
+                        </span>
+                    </div>
+
+                    <div id="separator"></div>
+
+                    <div id="card" class="d-flex flex-column">
+                        <h3 id="titulo-card">
+                            <svg style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                              </svg> Estatísticas
+                        </h3>
+                        <span id="texto-card">
+                            Última Prova<br>
+                            100% da prova 
+                        </span>
+                    </div>  
+
+                </div>
+
+                <!-- Fim Cards  --> 
+
+                <!-- Início Provas Disponíveis --> 
+
+                <div id="provas-anteriores">
+                    <h3 id="titulo-prova"><svg id="icone-provas" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                      </svg>Simulados disponíveis</h3>
+                        <ul id="provas-disponiveis" class="d-flex flex-column">
+                            <li id="prova"><span id="texto-prova">Simulado Fácil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Fácil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Médio (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Médio (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                            <li id="prova"><span id="texto-prova">Simulado Dificil (100 Questões)</span></li>
+                        </ul>
+                </div>
+            </div>
+
+            <!-- Fim Provas Disponíveis  --> 
+
+            <!-- Início Ranking --> 
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 vh-100 align-items-center d-none d-xl-block">
+                <div id="ranking">
+                    <div id="ranking-div" class="d-flex">
+
+                        <h3 id="titulo">Ranking</h3>
+                    </div>
+                    <ul id="ranking-pessoas">
+                        <li><img src="imgs/1.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/2.jpeg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/3.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/4.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/5.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/6.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/7.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/8.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/9.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/10.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/11.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/12.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/10.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/11.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                        <li><img src="imgs/12.jpg" id="pessoaimg"><span id="pontos-ranking">99 Pontos</span></li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Fim Ranking --> 
+        </div>
+    </div>
+
+    <!-- Fim Container Dashboard   --> 
+
+    
+
+
+     <!-- Declaração JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
