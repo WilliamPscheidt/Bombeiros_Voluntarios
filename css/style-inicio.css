@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    padding-right: -90px;
+}
+
+#background-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #201f1f;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobreposicao {
+    background: linear-gradient(180deg, hsla(0, 80%, 24%, 1) 0%, hsla(0, 0%, 0%, 1) 70%);
+    opacity: 90%;
+    z-index: 2;
+}
+
+#container-header {
+    background-color: transparent;
+    z-index: 3;
+}
+
+#menu {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 3;
+    animation: load 360ms ease-out;
+}
+
+#titulo {
+    margin-top: 26vh;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 3;
+    animation: load 690ms ease-out;
+}
+
+#titulo-sociedade {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 3;
+    animation: load 690ms ease-out;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+#btnSimulado {
+    margin-top: 40px;
+    width: 240px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: calc(600ms);
+    z-index: 3;
+    animation: load 690ms ease-out;
+}
+
+#btnSimulado:hover {
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+}
+
+#btnDescerpag {
+    margin-top: 15vh;
+    width: 64px;
+    height: 64px;
+    color: white;
+    transition: calc(600ms);
+    z-index: 3;
+    animation: loadDown 690ms ease-out;
+}
+
+#btnDescerpag:hover {
+    transform: scale(2, 2);
+    cursor: pointer;
+}
+
+@keyframes load{
+    0% {
+        transform: translateY(-1200px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes loadDown{
+    0% {
+        transform: translateX(1200px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 843px) {
+    #titulo, #titulo-sociedade {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    #titulo, #titulo-sociedade {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #titulo, #titulo-sociedade {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    #titulo, #titulo-sociedade {
+        font-size: 3rem;
+    }
+}
