@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+#provas-anteriores {
+    margin-top: -3px;
+    border-radius: 10px;
+    width: 100%;
+    height: 93vh; /** 71.3vh **/
+    padding-bottom: 20px;
+    background-color: var(--fundo-elementos);
+    color: var(--cor-icones);
+    transition: calc(690ms);
+}
+
+#titulo-prova {
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+span{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+input {
+    position: relative;
+    padding-left: 6px;
+    left: 20px;
+    width: 97%;
+    height: 38px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #B993D6 10%, #8CA6DB  90%, #B993D6  100%);
+    border: none;
+    color: #fff;
+}
+
+#btnSalvar {
+    position: relative;
+    left: 20px;
+    width: 97%;
+    height: 50px;
+    margin-top: 30px;
+    background-image: linear-gradient(to left, #B993D6 10%, #8CA6DB  90%, #B993D6  100%);
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#span-input {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+::placeholder {
+    color: white;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1280px) {
+    #provas-anteriores #provas-disponiveis #prova {
+      width: calc(97% - 1%);
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+  
+    #input {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 843px) {
+    input {
+        width: calc(97% - 2.5%);
+    }
+
+    #btnSalvar {
+        width: calc(97% - 2.5%);  
+    }
+}
+
+@media screen and (max-width: 582px) {
+    input {
+        width: calc(97% - 4.6%);
+    }
+
+    #btnSalvar {
+        width: calc(97% - 4.6%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input {
+        width: calc(97% - 4.6%);
+    }
+
+    #btnSalvar {
+        width: calc(97% - 4.6%);
+    }
+}
+
+@media screen and (max-width: 358px) {
+    input {
+        width: calc(97% - 8%);
+    }
+
+    #btnSalvar {
+        width: calc(97% - 8%);
+    }
+}
