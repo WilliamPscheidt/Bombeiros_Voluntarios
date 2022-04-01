@@ -28,7 +28,9 @@ input {
     width: 97%;
     height: 38px;
     border-radius: 5px;
-    background-image: linear-gradient(to left, #B993D6 10%, #8CA6DB  90%, #B993D6  100%);
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     color: #fff;
 }
@@ -39,7 +41,9 @@ input {
     width: 97%;
     height: 50px;
     margin-top: 30px;
-    background-image: linear-gradient(to left, #B993D6 10%, #8CA6DB  90%, #B993D6  100%);
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     font-size: 1.2rem;
     color: white;

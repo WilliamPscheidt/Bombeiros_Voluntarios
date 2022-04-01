@@ -10,12 +10,29 @@
     background-color: #c5c7c9;
 }
 
-a {
+a:link {
     text-decoration: none;
-    border: none;
     background: transparent;
+    color: white;
 }
-
+  
+a:visited {
+    text-decoration: none;
+    background: transparent;
+    color: white;
+}
+  
+a:hover {
+    text-decoration: none;
+    background: transparent;
+    color: white;
+}
+  
+a:active {
+    text-decoration: none;
+    background: transparent;
+    color: white;
+}
 #banner-sobreposicao {
     position: absolute;
     right: 0;

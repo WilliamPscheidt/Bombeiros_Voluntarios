@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
-
-
-    --cor-fundo: #E2D9D9; /** #E2D9D9; **/
+    --cor-fundo: #efecec; /** #E2D9D9; **/
     --fundo-elementos: #FFFFFF;
     --fundo-botoes: rgba(244, 52, 52, 0.69);
     --cor-texto-branco: #fff;
@@ -14,6 +12,26 @@
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+  
+a:active {
+    text-decoration: none;
+    color: white;
 }
 
 html {
@@ -36,21 +54,22 @@ html {
     position: relative;
 }
 
-#logo {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #aa84c9;
-}
-
 #div-sidebar #sidebar-menu {
-    margin-left: -11.6px;
+    margin-top: 21px;
+    margin-left: 15px;
     width: 300px;
     max-width: 70px;
-    height: 100%;
+    height: 95%;
     min-height: 500px;
-    background-image: linear-gradient(to bottom, #B993D6 10%, #8CA6DB  90%, #B993D6  100%);
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: fixed;
+    border-radius: 10px     ;
     transition: calc(600ms);
     z-index: 9999;
+    box-shadow: -5px 10px #e52d27;
+    animation: load 360ms ease-out;
 }
 
 #div-sidebar #sidebar-menu #menu-sidebar {
@@ -73,7 +92,7 @@ html {
 
 #menu-sidebar li {
     position: relative;
-    margin-top: 36px;
+    margin-top: 40px;
     width: 36px;
     height: 36px;
     transition: calc(600ms);
@@ -84,6 +103,7 @@ ul li:hover {
     transform: rotate(360deg);
     cursor: pointer;
     border-radius: 10px;
+    color: white;
 }
 
 /* ------------------------------------------ */
@@ -100,6 +120,7 @@ ul li:hover {
     width: 100%;
     height: 150px;
     margin-top: 20px;
+    animation: loadTop 360ms ease-out;
 }
 
 #cards-topo #card {
@@ -109,7 +130,7 @@ ul li:hover {
     border-radius: 10px;
     transition: calc(690ms);
     padding-bottom: 10px;
-    border-bottom: 2px solid #aa84c9;
+    border-bottom: 2px solid #b31217;
 }
 
 #cards-topo #card:hover {
@@ -159,6 +180,7 @@ ul li:hover {
     background-color: var(--fundo-elementos);
     color: var(--cor-icones);
     transition: calc(690ms);
+    animation: loadBottom 2000ms ease-in;
 }
 
 #provas-anteriores:hover {
@@ -170,7 +192,9 @@ ul li:hover {
     margin-top: 15px;
     width: 97%;
     height: 40px;
-    background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%);
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     transition: calc(360ms);
 }
@@ -216,11 +240,12 @@ ul li:hover {
     background-color: var(--fundo-elementos);
     flex-wrap: wrap;
     transition: calc(600ms);
+    animation: loadTop 2000ms ease-out;
 }
 
 #ranking-div {
     padding-bottom: 3px;
-    border-bottom: 1px solid #E2D9D9;
+    border-bottom: 1px solid #b31217;
 }
 
 #titulo {
@@ -263,6 +288,43 @@ ul li:hover {
 
 
 /* ------------------------------------------ */
+
+@keyframes load{
+    0% {
+        transform: translateX(-1200px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes loadTop{
+    0% {
+        transform: translateY(-1200px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes loadBottom{
+    0% {
+        transform: translateY(1200px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
 
 @media screen and (max-width: 1280px) {
     #provas-anteriores #provas-disponiveis #prova {
