@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
-    --cor-fundo: #efecec; /** #E2D9D9; **/
+    --cor-fundo: #e0dede; /** #E2D9D9; **/
     --fundo-elementos: #FFFFFF;
     --fundo-botoes: rgba(244, 52, 52, 0.69);
     --cor-texto-branco: #fff;
