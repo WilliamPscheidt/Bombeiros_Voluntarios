@@ -13,25 +13,27 @@
 a:link {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: #000000db;
+    font-weight: 700;
 }
   
 a:visited {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: #000000db;
+    font-weight: 700;
 }
   
 a:hover {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: #000000db;
 }
   
 a:active {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: #000000db;
 }
 #banner-sobreposicao {
     position: absolute;
@@ -49,7 +51,7 @@ a:active {
     background-size: cover;
     object-fit: cover;
     height: 100vh;
-    background-color: #313233;
+    background-color: #000000db;
     background-repeat: no-repeat;
     border-radius: 10px 0px 0px 10px;
 }
@@ -57,7 +59,7 @@ a:active {
 #titulo-login {
     font-size: 2.5rem;
     font-weight: 100;
-    color: black;
+    color: #000000db;
     background: transparent;
 }
 
@@ -73,7 +75,7 @@ a:active {
     width: 260px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #000000db;
     border-radius: 5px;
 }
 
@@ -84,7 +86,7 @@ a:active {
     width: 260px;
     border-radius: 5px;
     color: white;  
-    background: black;
+    background: #000000db;
     border: none;
 }
 
