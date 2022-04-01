@@ -14,7 +14,18 @@
 
     <title>Home</title>
 </head>
-<body>  
+<body> 
+    
+    <div id="menu-mobile" class="flex-column">
+        <ul>
+            <li onclick="fecharMenu()">Voltar</li>
+            <li>Inicio</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+            <li>Login</li>
+            <li>Registro</li>
+        </ul>
+    </div>
     <div id="background-header" class="sobreposicao"></div>
     <img id="background-header" src="http://agencia.sorocaba.sp.gov.br/wp-content/uploads/2018/10/bombeiros-gui-urban-10.jpg">
     <div class="main">
@@ -43,15 +54,15 @@
                                 <button class="btnMenu" id="login"><svg id="iconelogin" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
                                   </svg><a id="link" href="dashboard/index.html">Login</a></button>
-                                <button class="btnMenu" id="registro"><svg id="iconelogin" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                  <a a id="linkregistro" href="dashboard/register.html"><button class="btnMenu" id="registro"><svg id="iconelogin" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
-                                  </svg><a a id="link" href="dashboard/register.html">Registro</a></button>
+                                  </svg>Registro</button></a>
                             </div>
 
-                            <div class="d-flex d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" id="menuLogin">
-                                <svg style="color: black; width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <div class="d-flex d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" id="menuLogin"> <!-- d-flex d-xs-block d-sm-block d-md-none d-lg-none d-xl-none -->
+                                <svg onClick="menuMobile()" style="color: black; width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                                  </svg>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -101,7 +112,7 @@
                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex flex-column justify-content-center d-none d-lg-flex">
                         <h3 id="tituloFooter">Link</h3>
                         <ul id="links">
-                            <li><a id="link" href="#inicio" style="color: white;">Início</a></li>
+                            <li><a id="link" href="#inicio" style="color: white;">Termos de Uso</a></li>
                             <li><a id="link" href="#sobre" style="color: white;">Conheça</a></li>
                             <li><a id="link" href="#contato" style="color: white;">Contato</a></li>    
                         </ul>
@@ -128,6 +139,7 @@
 
 
      <!-- Declaração JS --> 
+    <script src="javascript/home.js"></script>
     <script src="https://kit.fontawesome.com/a5ccf9614c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

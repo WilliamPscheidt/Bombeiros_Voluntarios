@@ -4,10 +4,31 @@ html {
     overflow-x: hidden;
 }
 
+#linkregistro {
+    color: black;
+    text-decoration: none;
+}
+
+#linkregistro:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .main {
     width: 100%;
     height: 100%;
     background-color: #E2D9D9;
+}
+
+#menu-mobile {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    background-color: #201f1f;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
 }
 
 * {
@@ -55,7 +76,7 @@ html {
     font-size: 5rem;
     font-weight: 700;
     color: #fff;
-    z-index: 3;
+    z-index: 2;
     animation: load 690ms ease-out;
 }
 
@@ -63,7 +84,7 @@ html {
     font-size: 5rem;
     font-weight: 700;
     color: #fff;
-    z-index: 3;
+    z-index: 2;
     animation: load 690ms ease-out;
 }
 
@@ -80,7 +101,7 @@ html {
     font-weight: 700;
     transition: calc(600ms);
     animation: load 690ms ease-out;
-    z-index: 10;
+    z-index: 2;
 }
 
 #btnSimulado:hover {
@@ -94,7 +115,7 @@ html {
     height: 64px;
     color: white;
     transition: calc(600ms);
-    z-index: 10;
+    z-index: 2;
     animation: loadDown 690ms ease-out;
 }
 
@@ -283,7 +304,7 @@ html {
 }
 
 #tituloContato {
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: white;
     font-weight: 700;
     margin-top: 100px;
@@ -361,7 +382,7 @@ html {
 
 @media screen and (max-width: 582px) {
     #titulo, #titulo-sociedade, #tituloContato {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     #menu {
@@ -379,7 +400,7 @@ html {
 
 @media screen and (max-width: 400px) {
     #titulo, #titulo-sociedade, #tituloContato {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #menu {
@@ -397,7 +418,7 @@ html {
 
 @media screen and (max-width: 375px) {
     #titulo, #titulo-sociedade, #tituloContato {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #menu {
