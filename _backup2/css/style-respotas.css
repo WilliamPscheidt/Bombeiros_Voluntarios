@@ -1,0 +1,35 @@
+#provas-anteriores {
+    padding-top: 1px;
+    font-weight: 700;
+}
+
+#titulo-prova {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-right: 4px;
+}
+
+#btn {
+    margin-top: 15px;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+}
+
+#text {
+    padding: 6px;
+}
+
+#titulo-prova {
+    font-weight: 100;
+}
