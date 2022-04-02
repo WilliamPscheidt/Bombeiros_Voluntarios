@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Declaração CSS --> 
+
+    <link rel="stylesheet" href="css/style-inicio.css">
+    <link rel="stylesheet" href="cssfont/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Home</title>
+</head>
+<body> 
+    
+    <div id="menu-mobile" class="flex-column">
+        <ul>
+            <li onclick="fecharMenu()">Voltar</li>
+            <li>Inicio</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+            <li>Login</li>
+            <li>Registro</li>
+        </ul>
+    </div>
+    <div id="background-header" class="sobreposicao"></div>
+    <img id="background-header" src="http://agencia.sorocaba.sp.gov.br/wp-content/uploads/2018/10/bombeiros-gui-urban-10.jpg">
+    <div class="main">
+        <div class="container">
+            <header class="vh-100" id="container-header">
+                <div class="row" id="inicio">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div id="menu" class="align-items-center d-flex flex-row justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <img src="imgs/logo.png" id="logo">
+                                <ul id="menu-items" class="d-flex d-none d-md-flex">
+                                    <svg id="icone" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                      </svg><li id="item"><a id="link" href="#inicio">Início</a></li>
+                                      <svg id="icone" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
+                                      </svg><li id="item"><a id="link" href="#sobre">Conheça</a></li>
+                                      <svg id="icone" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                      </svg><li id="item"><a a id="link" href="#contato">Contato</a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="d-flex d-none d-md-flex d-none d-md-flex" id="menuLogin">
+                                <button class="btnMenu" id="login"><svg id="iconelogin" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                  </svg><a id="link" href="dashboard/index.html">Login</a></button>
+                                  <a a id="linkregistro" href="dashboard/register.html"><button class="btnMenu" id="registro"><svg id="iconelogin" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
+                                  </svg>Registro</button></a>
+                            </div>
+
+                            <div class="d-flex d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" id="menuLogin"> <!-- d-flex d-xs-block d-sm-block d-md-none d-lg-none d-xl-none -->
+                                <svg onClick="menuMobile()" style="color: black; width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                        <span id="titulo">Seja voluntário pela</span>
+                        <span id="titulo-sociedade" class="negrito"><b>Sociedade</b></span>
+                        <button id="btnSimulado"><a href="dashboard/index.html" id="link">Faça um Simulado</a></button>
+                        <a id="link" href="#sobre"><svg id="btnDescerpag" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg></a>
+                    </div>
+                </div>
+            </header>
+    
+                <div class="row" id="sobre">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex flex-column">
+                        <h3 id="titulo-sobre">Como funciona?</h3>
+                        <span id="subtexto">
+                            Com a plataforma (coloca nome da plataforma) você terá acesso a diversos simulados e provas, além de um sistema de ranking onde poderá disputar com diversas pessoas do Brasil e do Mundo a fim de definir o seu nível de conhecimento em comparação com os demais usuários.
+                        </span>
+                        <button id="btnSobre"><a id="link" href="dashboard/index.html" style="color: white; border-radius: 10px;">Começar agora!</a></button>
+                    </div>
+
+                    <div class="col-6 d-none d-xl-block">
+                        <img src="imgs/estudo.jpg" id="imagemSobre">
+                    </div>
+                </div>
+
+            <section id="contato">
+                <div id="teste"> </div>
+                <div class="row">
+                    <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                        <h3 id="tituloContato">Entre em contato conosco!</h3>
+                        <button id="btnContato">Entrar em contato</button>
+                    </div>
+                </div>
+            </section>
+
+            <div id="footer">
+                <div class="row d-flex justify-content-center" id="separator">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center d-none d-lg-flex">
+                        <img src="imgs/logo.png" id="logo">
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                        <h3 id="tituloFooter">Link</h3>
+                        <ul id="links">
+                            <li><a id="link" href="#inicio" style="color: white;">Termos de Uso</a></li>
+                            <li><a id="link" href="#sobre" style="color: white;">Conheça</a></li>
+                            <li><a id="link" href="#contato" style="color: white;">Contato</a></li>    
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                        <h3 id="tituloFooter">Estudantes</h3>
+                        <ul id="links">
+                            <li><a id="link" href="dashboard/dashboard/dashboard.html" style="color: white;">Dashboard</a></li>
+                            <li><a id="link" href="dashboard/index.html" style="color: white;">Login</a></li>
+                            <li><a id="link" href="dashboard/register.html" style="color: white;">Registro</a></li>    
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex flex justify-content-center">
+                        <i id="icon-footer" class="fa-brands fa-facebook-square"></i>
+                        <i id="icon-footer"class="fa-brands fa-github"></i>
+                        <i id="icon-footer"class="fa-brands fa-twitter-square"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+     <!-- Declaração JS --> 
+    <script src="javascript/home.js"></script>
+    <script src="https://kit.fontawesome.com/a5ccf9614c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
