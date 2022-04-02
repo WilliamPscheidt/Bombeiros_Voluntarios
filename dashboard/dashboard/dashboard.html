@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Declaração CSS --> 
+
+    <link rel="stylesheet" href="../../css/style-master.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dashboard | Home</title>
+</head>
+<body>
+
+    <!-- Menu Mobile (FAZER) --> 
+
+    <div class="row d-none">
+        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 d-none d-xl-block">  <!-- d-none == Oculta a div && d-xl-block exibe apenas em telas mobile --> 
+            adgdsadsgasdgasd
+        </div>
+    </div>
+
+    <!-- Início Dashboard   --> 
+
+    <div class="container-fluid d-flex">
+
+            <div id="div-sidebar" class="vh-100 d-none d-xl-flex" style="width: 90px;">
+                <div id="sidebar-menu">
+                    <div class="d-flex flex-column h-100">
+                        <ul id="menu-sidebar" class="list-group align-items-center">
+                            <li><a href="home.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                              </svg></li></a>
+                            <li><a href="perfil.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                              </svg></a></li>
+                              <li><a href="dashboard.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+                                <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+                              </svg></a></li>
+                            <li><a href="../index.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                              </svg></a></li>                            
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        <main class="container">
+            <div class="row d-flex justify-content-center" style="margin-top: 20px;">
+                <div id="card-top" class="col-sm-4 p-4 bg-light d-flex flex-column card1">
+                    <h1 id="titulo"><svg width="26px" height="26px" viewBox="0 -0.38 4.35 4.35" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; margin-top: -5px; margin-right: 5px;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><g id="Layer_x0020_1"><path class="fil0" d="M2.28 0.07l2.07 1.29 -0.22 0.14 0 0.93 -0.31 0 0 -0.73 -0.69 0.43c0.08,0.04 0.14,0.09 0.2,0.14 0.15,0.13 0.24,0.3 0.24,0.47 0,0.26 -0.18,0.48 -0.46,0.63 -0.24,0.13 -0.57,0.21 -0.94,0.21 -0.36,0 -0.69,-0.08 -0.93,-0.21 -0.28,-0.15 -0.46,-0.37 -0.46,-0.63 0,-0.17 0.08,-0.33 0.22,-0.46 0.06,-0.06 0.14,-0.11 0.22,-0.15l-1.22 -0.77 2.17 -1.36 0.11 0.07zm0.44 2.31l-0.55 0.34 -0.54 -0.34c-0.15,0.05 -0.28,0.12 -0.36,0.19 -0.06,0.06 -0.09,0.12 -0.09,0.17 0,0.1 0.09,0.2 0.24,0.28 0.19,0.1 0.46,0.17 0.75,0.17 0.3,0 0.57,-0.07 0.75,-0.17 0.15,-0.08 0.25,-0.18 0.25,-0.28 0,-0.06 -0.04,-0.12 -0.1,-0.18 -0.08,-0.07 -0.2,-0.13 -0.35,-0.18zm0.25 -1.41l-0.8 -0.5 -1.42 0.89 1.42 0.9 1.43 -0.9 -0.63 -0.39z"/></g></svg>Última Prova</h1>
+                    <span id="textoCard">
+                        <svg id="icon" width="26px" height="26px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g><path d="M16.354 11.896l-0.707 0.707-7.147-7.146-7.146 7.146-0.707-0.707 7.853-7.853 7.854 7.853z" fill="#45f542" /></svg>
+                        89 Acertos
+                    </span>
+                </div>
+                <div id="card-top" class="col-sm-4 p-4 bg-light d-flex flex-column card2">
+                    <h1 id="titulo"><svg width="26px" height="26px" viewBox="-1.01 0 5.75 5.75" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; margin-right: 5px;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><g id="Layer_x0020_1"><path class="fil0" d="M0.54 0.9l0 2.82c0,0.02 0.72,0.68 1.18,1.1l0 0 0.18 0.17 0.23 -0.23c0.43,-0.43 1.05,-1.03 1.05,-1.04l0 -2.82c0,-0.1 -0.04,-0.19 -0.1,-0.25 -0.07,-0.07 -0.16,-0.11 -0.26,-0.11l-1.92 0c-0.1,0 -0.19,0.04 -0.25,0.11 -0.07,0.06 -0.11,0.15 -0.11,0.25zm1.37 0.35l0.27 0.55c0.01,0.01 0.02,0.02 0.04,0.02l0.59 0.09c0.03,0.01 0.04,0.02 0.05,0.04 0,0.02 0,0.04 -0.02,0.05l-0.43 0.43c-0.01,0.01 -0.02,0.03 -0.01,0.04l0.1 0.6c0,0.02 -0.01,0.04 -0.02,0.05 -0.02,0.01 -0.04,0.01 -0.06,0l-0.53 -0.27c-0.02,-0.01 -0.04,-0.01 -0.05,0l-0.54 0.27c-0.02,0.01 -0.04,0.01 -0.06,0 -0.01,-0.01 -0.02,-0.03 -0.02,-0.05l0.1 -0.6c0.01,-0.01 0,-0.03 -0.01,-0.04l-0.43 -0.43c-0.02,-0.01 -0.02,-0.03 -0.02,-0.05 0.01,-0.02 0.03,-0.03 0.05,-0.04l0.59 -0.09c0.02,0 0.04,-0.01 0.04,-0.02l0.27 -0.55c0.01,-0.01 0.03,-0.02 0.05,-0.02 0.02,0 0.04,0.01 0.05,0.02zm-1.91 2.47l0 -2.82c0,-0.25 0.1,-0.47 0.26,-0.64 0.17,-0.16 0.39,-0.26 0.64,-0.26l1.92 0c0.25,0 0.47,0.1 0.64,0.26 0.16,0.17 0.26,0.39 0.26,0.64l0 2.82c0,0.21 -0.72,0.92 -1.21,1.42 -0.2,0.19 -0.36,0.35 -0.41,0.4l-0.19 0.21 -0.2 -0.2c-0.06,-0.06 -0.19,-0.18 -0.36,-0.33l0 0c-0.52,-0.48 -1.35,-1.24 -1.35,-1.5z"/></g></svg>Seu Ranking</h1>
+                    <span id="textoCard">
+                        <svg width="26px" height="26px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g><path d="M16.354 5.075l-7.855 7.854-7.853-7.854 0.707-0.707 7.145 7.146 7.148-7.147 0.708 0.708z" fill="#e30715" /></svg>
+                        <b id="textoCard">Posição 1897</b>
+                    </span>
+                </div>
+                <div id="card-top" class="col-sm-4 p-4 bg-light d-flex flex-column card3">
+                    <h1 id="titulo"><svg width="26px" height="26px" viewBox="0 -0.41 4.35 4.35" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; margin-right: 5px;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><g id="Layer_x0020_1"><path class="fil0" d="M4.2 0.29l0.01 0.01c0.11,0.16 0.16,0.35 0.13,0.53 -0.02,0.18 -0.12,0.35 -0.28,0.47l-2.95 2.22 -0.77 0.01c-0.05,0 -0.1,-0.01 -0.15,-0.04 -0.05,-0.02 -0.09,-0.05 -0.12,-0.1 -0.03,-0.04 -0.06,-0.09 -0.07,-0.14 0,-0.05 0,-0.1 0.02,-0.16l0.22 -0.73 2.95 -2.22c0.16,-0.12 0.35,-0.16 0.53,-0.13 0.19,0.02 0.36,0.12 0.48,0.28zm-0.96 0.26l0.45 0.59 0.16 -0.12c0.08,-0.06 0.13,-0.15 0.14,-0.24 0.01,-0.09 -0.01,-0.19 -0.07,-0.27l-0.01 -0.01c-0.06,-0.08 -0.14,-0.13 -0.24,-0.14 -0.09,-0.02 -0.18,0.01 -0.26,0.06l-0.17 0.13zm0.17 0.8l-0.45 -0.59 -2.19 1.65 0.44 0.59 2.2 -1.65zm-2.51 1.82l-0.38 -0.51 -0.16 0.52 0.54 -0.01z"/></g></svg>Taxa de Acerto</h1>
+                    <span id="textoCard">
+                        <svg width="26px" height="26px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g><path d="M16.354 5.075l-7.855 7.854-7.853-7.854 0.707-0.707 7.145 7.146 7.148-7.147 0.708 0.708z" fill="#e30715" /></svg>
+                        52%
+                    </span>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" style="margin-top: 30px;">
+                <div class="col-12 col-md-6 p-3 bg-light" id="dashboard-card">
+                    <h1 id="tituloGráfico">Curva de Evolução</h1>
+                    <div id="chart_div"></div>
+                    
+                </div>
+                <div class="col-12 col-md-6 p-3 bg-light" id="dashboard-card">
+                    <h1 id="tituloGráfico">Pontos por Dificuldade</h1>
+                    <div id="piechart">
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6 p-3 bg-light" id="dashboard-card">
+                    <h1 id="tituloGráfico">Ranking</h1>
+                    <div id="table_div"></div>
+                </div>
+                <div class="col-12 col-md-6 p-3 bg-light d-flex flex-column" id="dashboard-card">
+                    <h1 id="tituloGráfico">Histórico de Simulados</h1>
+                    <div class="d-flex flex-column">
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil 1</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil 2</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado 1</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado 2</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Dificil 1</span></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+
+    <script type="text/javascript" src="../../javascript/loader.js"></script> <!-- Loader Google Charts -->
+    <script type="text/javascript" src="../../javascript/grafico1.js"> </script>
+    <script type="text/javascript" src="../../javascript/grafico2.js"> </script>
+    <script type="text/javascript" src="../../javascript/grafico3.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
