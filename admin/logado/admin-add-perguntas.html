@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Declaração CSS --> 
+
+    <link rel="stylesheet" href="../../css/admin-add-resposta.css">
+    <link rel="stylesheet" href="../../css/admin-add.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Admin -> ADD</title>
+</head>
+<body>
+    <!-- Início Dashboard   --> 
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <div id="container-menu" class="d-flex align-items-center justify-content-center">
+                    <ul class="d-flex ">
+                        <li><svg id="icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z" />
+                            <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z" />
+                          <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z" />
+                          </svg><span id="opcao">Adicionar Questoes</span></li>
+                        <li><svg id="icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
+                          </svg><span id="opcao">Adicionar Admin</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <textarea type="text" placeholder="Digite a pergunta" id="inputPergunta"></textarea>
+            </div>
+        </div>
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-2 d-flex flex-column">
+                <div class="d-flex" id="separator">
+                    <input type="checkbox" id="checkbox"><button id="btnDificuldade">Fácil</button>
+                </div>
+                
+                <div class="d-flex" id="separator">
+                    <input type="checkbox" id="checkbox"><button id="btnDificuldade">Moderado</button>
+                </div>
+
+                <div class="d-flex" id="separator">
+                    <input type="checkbox" id="checkbox"><button id="btnDificuldade">Dificil</button>
+                </div>
+            </div>
+            <div class="col-10 d-flex flex-column">
+                <div class="d-flex" id="separator">
+                    <input><input type="checkbox" id="resposta">
+                </div>
+                <div class="d-flex" id="separator">
+                    <input><input type="checkbox" id="resposta">
+                </div>
+                <div class="d-flex" id="separator">
+                    <input><input type="checkbox" id="resposta">
+                </div>
+                <div class="d-flex" id="separator">
+                    <input><input type="checkbox" id="resposta">
+                </div>
+                <div class="d-flex" id="separator">
+                    <input><input type="checkbox" id="resposta">
+                </div>
+                <div id="separator">
+                    <button>Salvar</button>
+                </div>
+            </div>
+        </div>
+
+     <!-- Declaração JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
