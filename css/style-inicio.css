@@ -4,6 +4,30 @@ html {
     overflow-x: hidden;
 }
 
+#btnMobile {
+    font-size: 2rem;
+    padding-top: 3px;
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#linka {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-mobile2 {
+    align-items: center;
+    color: white;
+    list-style: none;
+}
+
 #linkregistro {
     color: black;
     text-decoration: none;
