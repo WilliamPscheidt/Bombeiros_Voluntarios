@@ -1,44 +1,55 @@
+:root {
+    --cor-fundo: #c5c7c9;
+    --sobreposicao-banner: linear-gradient(180deg, hsla(0, 80%, 24%, 1) 0%, hsla(0, 0%, 0%, 1) 70%);
+    --text-a-branco: white;
+    --titulo-login: black;
+    --inputs: black;
+    --placeholder-input: white;
+    --botao-login: black;
+    --texto-registro: black;
+}
+
 * {
     padding: 0;
     margin: 0;
-    background-color: #c5c7c9;
+    background-color: var(--cor-fundo);
 }
 
 #login {
     width: 50%;
     height: 100vh;
-    background-color: #c5c7c9;
+    background-color: var(--cor-fundo);
 }
 
 a:link {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: var(--text-a-branco);
 }
   
 a:visited {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: var(--text-a-branco);
 }
   
 a:hover {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: var(--text-a-branco);
 }
   
 a:active {
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: var(--text-a-branco);
 }
 #banner-sobreposicao {
     position: absolute;
     right: 0;
     height: 100%;
     width: 50%;
-    background-image: linear-gradient(180deg, hsla(0, 80%, 24%, 1) 0%, hsla(0, 0%, 0%, 1) 70%);
+    background-image: var(--sobreposicao-banner);
     border-radius: 10px 0px 0px 10px;
     opacity: 90%;
 }
@@ -57,7 +68,7 @@ a:active {
 #titulo-login {
     font-size: 2.5rem;
     font-weight: 100;
-    color: black;
+    color: var(--titulo-login);
     background: transparent;
 }
 
@@ -73,7 +84,7 @@ a:active {
     width: 260px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: var(--inputs);
     border-radius: 5px;
 }
 
@@ -84,19 +95,19 @@ a:active {
     width: 260px;
     border-radius: 5px;
     color: white;  
-    background: black;
+    background: var(--botao-login);
     border: none;
 }
 
 #registro {
     margin-top: 20px;
-    color: black;
+    color: var(--texto-registro);
     background: transparent;
 }
 
 
 ::placeholder {
-    color: white;
+    color: var(--placeholder-input);
     border: none;
 }
 
