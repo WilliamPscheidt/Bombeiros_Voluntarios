@@ -2,17 +2,25 @@
     --cor-fundo: #c5c7c9;
     --sobreposicao-banner: linear-gradient(180deg, hsla(0, 80%, 24%, 1) 0%, hsla(0, 0%, 0%, 1) 70%);
     --text-a-branco: white;
-    --titulo-login: black;
-    --inputs: black;
+    --titulo-login: rgb(32, 31, 31);
+    --inputs: rgba(32, 31, 31, 0.707);
     --placeholder-input: white;
     --botao-login: black;
     --texto-registro: black;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    background-color: var(--cor-fundo);
+#termosCheckbox {
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: none;
+}
+
+input[type="checkbox"] {
+    border: none;
+    box-shadow: none;
+    font-size: 2em;
 }
 
 #login {
@@ -50,7 +58,6 @@ a:active {
     height: 100%;
     width: 50%;
     background-image: var(--sobreposicao-banner);
-    border-radius: 10px 0px 0px 10px;
     opacity: 90%;
 }
 
@@ -62,7 +69,6 @@ a:active {
     height: 100vh;
     background-color: #313233;
     background-repeat: no-repeat;
-    border-radius: 10px 0px 0px 10px;
 }
 
 #titulo-login {
@@ -100,7 +106,7 @@ a:active {
 }
 
 #registro {
-    margin-top: 20px;
+    margin-top: 5px;
     color: var(--texto-registro);
     background: transparent;
 }
@@ -109,6 +115,18 @@ a:active {
 ::placeholder {
     color: var(--placeholder-input);
     border: none;
+}
+
+#termos {
+    margin-top: 5px;
+}
+
+#termos-de-uso {
+    font-weight: 700;
+}
+
+#exampleModal {
+    z-index: 99999;
 }
 
 @media screen and (max-width: 1199px) {
