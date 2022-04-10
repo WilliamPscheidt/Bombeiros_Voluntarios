@@ -28,27 +28,45 @@
 
     <div class="container-fluid d-flex">
 
-            <div id="div-sidebar" class="vh-100 d-none d-xl-flex" style="width: 90px;">
-                <div id="sidebar-menu">
-                    <div class="d-flex flex-column h-100">
-                        <ul id="menu-sidebar" class="list-group align-items-center">
-                            <li><a href="home.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <div id="div-sidebar" class="vh-100 d-none d-xl-flex" style="width: 4%;">
+            <div id="sidebar-menu">
+                <ul class="d-flex" style="list-style: none; position: relative; left: -15px; margin-top: 20px;">
+                    <svg id="abrirMenu" onclick="abrirMenu()" style="color: #fff; width: 26px; height: 26px; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /> 
+                     </svg>
+                    <svg id="fecharMenu" class="d-none" onclick="fecharMenu()" style="color: #fff; width: 26px; height: 26px; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg> <span id="textoMenu" class="d-none">Fechar Menu</span>
+                </ul>
+                <div class="d-flex h-100">
+                    <ul id="menu-sidebar" class="list-group" style="padding-left: 18px;">
+                        <div class="d-flex" id="active">
+                            <a href="../dashboard/home.html" class="d-flex"><svg style="height: 26px; width: 26px; margin-top: 30px; color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                              </svg></li></a>
-                            <li><a href="perfil.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                              </svg></a></li>
-                              <li><a href="dashboard.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
-                                <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
-                              </svg></a></li>
-                            <li><a href="../index.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              </svg> <span id="textoMenu2" class="d-none">Home</span></a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="../dashboard/perfil.html" class="d-flex"><svg style="height: 26px; width: 26px; margin-top: 30px; color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg> <span id="textoMenu3" class="d-none">Perfil</span></a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="../dashboard/dashboard.html" class="d-flex"><svg style="height: 26px; width: 26px; margin-top: 30px; color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg> <span id="textoMenu4" class="d-none">Dashboard</span></a>
+                        </div>
+                        <div class="d-flex" style="position: relative; left: 3px;">
+                            <a href="../acesso.html" class="d-flex"><svg style="height: 26px; width: 26px; margin-top: 30px; color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                              </svg></a></li>                            
-                          </ul>
-                    </div>
+                              </svg> <span id="textoMenu5" class="d-none">Deslogar</span></a>
+                        </div>
+                        
+                      </ul>
                 </div>
+
+
             </div>
+        </div>
         <main class="container">
             <div class="row d-flex justify-content-center" style="margin-top: 20px;">
                 <div id="card-top" class="col-sm-4 p-4 bg-light d-flex flex-column card1">
@@ -76,28 +94,29 @@
             <div class="row d-flex justify-content-center" style="margin-top: 30px;">
                 <div class="col-12 col-md-6 p-3 bg-light" id="dashboard-card">
                     <h1 id="tituloGráfico">Curva de Evolução</h1>
-                    <div id="chart_div"></div>
+                    <div id="chart"></div>
                     
                 </div>
                 <div class="col-12 col-md-6 p-3 bg-light" id="dashboard-card">
                     <h1 id="tituloGráfico">Pontos por Dificuldade</h1>
-                    <div id="piechart">
+                    <div id="donut">
                     </div>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-6 p-3 bg-light" id="dashboard-card">
                     <h1 id="tituloGráfico">Ranking</h1>
-                    <div id="table_div"></div>
+                    <div id="chartRanking"></div>
                 </div>
                 <div class="col-12 col-md-6 p-3 bg-light d-flex flex-column" id="dashboard-card">
                     <h1 id="tituloGráfico">Histórico de Simulados</h1>
                     <div class="d-flex flex-column">
-                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil 1</span></a>
-                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil 2</span></a>
-                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado 1</span></a>
-                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado 2</span></a>
-                        <a href="#" id="btnHistorico"><span id="texto">Simulado Dificil 1</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil A</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil B</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Fácil C</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado A</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado B</span></a>
+                        <a href="#" id="btnHistorico"><span id="texto">Simulado Moderado C</span></a>
                     </div>
                 </div>
             </div>
@@ -108,6 +127,209 @@
     <script type="text/javascript" src="../../javascript/grafico1.js"> </script>
     <script type="text/javascript" src="../../javascript/grafico2.js"> </script>
     <script type="text/javascript" src="../../javascript/grafico3.js"> </script>
+
+    <script>
+        function abrirMenu() {
+            $('#sidebar-menu').css('width', '180px');
+            $('#abrirMenu').attr('class', 'd-none')
+            $('#fecharMenu').attr('class', 'd-flex')
+
+
+            setTimeout(() => {  
+                $('#textoMenu').attr('class', 'd-block')
+                $('#textoMenu2').attr('class', 'd-block')
+                $('#textoMenu3').attr('class', 'd-block')
+                $('#textoMenu4').attr('class', 'd-block')
+                $('#textoMenu5').attr('class', 'd-block')
+            }, 220);
+            
+        }
+
+        function fecharMenu() {
+            $('#sidebar-menu').css('width', '60px');
+            $('#abrirMenu').attr('class', 'd-flex')
+            $('#fecharMenu').attr('class', 'd-none')
+            $('#textoMenu').attr('class', 'd-none')
+            $('#textoMenu2').attr('class', 'd-none')
+            $('#textoMenu3').attr('class', 'd-none')
+            $('#textoMenu4').attr('class', 'd-none')
+            $('#textoMenu5').attr('class', 'd-none')
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+        Apex.grid = {
+            padding: {
+                right: 0,
+                left: 0
+            }
+            }
+
+            Apex.dataLabels = {
+            enabled: false
+            }
+
+            var randomizeArray = function (arg) {
+            var array = arg.slice();
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            while (0 !== currentIndex) {
+
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+            }
+
+            // data for the sparklines that appear below header area
+            var sparklineData = [47, 45, 54, 38, 56, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46];
+
+            // the default colorPalette for this dashboard
+            //var colorPalette = ['#01BFD6', '#5564BE', '#F7A600', '#EDCD24', '#F74F58'];
+            var colorPalette = ['#00D8B6','#008FFB',  '#FEB019', '#FF4560', '#775DD0']
+
+        var optionsBar = {
+        chart: {
+            type: 'bar',
+            height: 250,
+            width: '100%',
+            stacked: true,
+        },
+        plotOptions: {
+            bar: {
+            columnWidth: '45%',
+            }
+        },
+        colors: colorPalette,
+        series: [{
+            name: "Fácil",
+            data: [42, 52, 16, 55, 59, 51, 45, 32, 26, 33],
+        }, {
+            name: "Moderado",
+            data: [42, 52, 16, 55, 59, 51, 45, 32, 26, 33],
+        }, {
+            name: "Dificil",
+            data: [6, 12, 4, 7, 5, 3, 6, 4, 3, 3],
+        }],
+        labels: [1,2,3,4,5,6,7,8,9,10],
+        xaxis: {
+            labels: {
+            show: true
+            },
+            axisBorder: {
+            show: false
+            },
+            axisTicks: {
+            show: false
+            },
+        },
+        yaxis: {
+            axisBorder: {
+            show: false
+            },
+            axisTicks: {
+            show: false
+            },
+            labels: {
+            style: {
+                colors: '#78909c'
+            }
+            }
+        },
+        title: {
+            text: '',
+            align: 'left',
+            style: {
+            fontSize: '18px'
+            }
+        }
+
+        }
+
+            var chartBar = new ApexCharts(document.querySelector('#chart'), optionsBar);
+            chartBar.render();
+
+            var optionDonut = {
+                chart: {
+                    type: 'donut',
+                    width: '100%',
+                    height: 240
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                plotOptions: {
+                    pie: {
+                    customScale: 1,
+                    donut: {
+                        size: '75%',
+                    },
+                    offsetY: 20,
+                    },
+                    stroke: {
+                    colors: undefined
+                    }
+                },
+                colors: colorPalette,
+                title: {
+                    text: '',
+                    style: {
+                    fontSize: '18px'
+                    }
+                },
+                series: [90, 80, 20],
+                labels: ['Fácil', 'Moderado', 'Dificil'],
+                legend: {
+                    position: 'left',
+                    offsetY: 80
+                }
+                }
+
+                var donut = new ApexCharts(
+                document.querySelector("#donut"),
+                optionDonut
+                )
+                donut.render();
+
+
+
+
+          var options = {
+          series: [{
+          data: [9000, 7000, 5000, 4000, 2000, 1000, 950, 850, 743, 600]
+        }], colors: colorPalette,
+          chart: {
+          type: 'bar',
+          height: 290
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            horizontal: true,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        xaxis: {
+          categories: ['William Pscheidt', 'João Silva', 'João Pedro', 'José Seilá', 'Jailson Mendes', 'Pastel de Flango', 'Josnei Silva',
+            'Carl Johnson', 'Big Smoke'
+          ],
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartRanking"), options);
+        chart.render();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
