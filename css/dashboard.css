@@ -39,20 +39,20 @@ main {
 }
 
 .card1 {
-    border-bottom: 3px solid red;
+    border-bottom: 2px solid red;
 }
 
 .card2 {
-    border-bottom: 3px solid rgb(40, 224, 27);
+    border-bottom: 2px solid rgb(40, 224, 27);
 }
 
 .card3 {
-    border-bottom: 3px solid rgb(18, 203, 188);
+    border-bottom: 2px solid rgb(18, 203, 188);
 }
 
 #dashboard-card {
-    width: 640px;
-    height: 300px;
+    width: 49%;
+    height: 350px;
     margin: 4px;
     margin-top: 5px;
     border-radius: 10px;
