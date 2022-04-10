@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Declaração CSS --> 
+
+    <link rel="stylesheet" href="../css/style-login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dashboard | Login</title>
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Termos de Uso</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="fecharTermos()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <span style="margin-top: 8px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis nulla quasi provident quidem itaque aliquam ullam veritatis animi labore pariatur accusantium totam, nostrum amet vero a. Fuga, velit magnam.</span>
+                <span style="margin-top: 8px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis nulla quasi provident quidem itaque aliquam ullam veritatis animi labore pariatur accusantium totam, nostrum amet vero a. Fuga, velit magnam.</span>
+                <span style="margin-top: 8px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis nulla quasi provident quidem itaque aliquam ullam veritatis animi labore pariatur accusantium totam, nostrum amet vero a. Fuga, velit magnam.</span>
+                <span style="margin-top: 8px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis nulla quasi provident quidem itaque aliquam ullam veritatis animi labore pariatur accusantium totam, nostrum amet vero a. Fuga, velit magnam.</span>
+        
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="fecharTermos()">Entendi</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="bgColor">
+
+        <div class="row" id="bgColor">
+            <div id="banner" class="col-xs-0 col-sm-0 col-md-0 col-lg-0 col-xl-6 100-vh d-none d-xl-flex justify-content-center align-items-center">
+                <img id="imgBanner" src="../imgs/SVG/Taking notes-amico.svg">
+            </div>
+
+
+            <div id="login" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 100-vh d-flex flex-column justify-content-center align-items-center">
+                <div id="card" class="d-flex flex-column">
+                    <img src="../imgs/hand.png" style="width: 26px; height: 26px;">
+                    <h3 class="text-left" id="titulo1">Bem vindo novamente!</h3>
+                    <span>Digite seus dados para acessar sua conta</span>
+                    <span id="textInput">E-mail</span>
+                    <input id="campo-login" placeholder="Digite o seu e-mail" type="text">
+                    <span id="textInput" style="margin-top: 7px">Senha</span>
+                    <input id="campo-login" placeholder="Digite a sua senha" type="password">
+                    <span id="lembrarDados"><input type="checkbox" id="checkboxDados">Lembrar Dados</span>
+                    <button id="btnLogin"><a href="dashboard/dashboard.html" style="color: white;">Acessar Conta</b></a></button>
+                    <span>Ainda não possui uma conta? <a onclick="abrirRegistro()" style="color: rgba(212, 35, 35, 0.801); cursor: pointer;">Registre uma!</a></span>
+                </div>
+
+                <div id="card-registro" class="d-flex flex-column d-none">
+                    <img src="../imgs/hand.png" style="width: 26px; height: 26px;">
+                    <h3 class="text-left" id="titulo1">Registre a sua Conta</h3>
+                    <span>Digite os dados para Registrar sua conta</span>
+                    <span id="textInput">Nome</span>
+                    <input id="campo-login" placeholder="Digite o seu nome" type="text">
+                    <span id="textInput" style="margin-top: 7px">Sobrenome</span>
+                    <input id="campo-login" placeholder="Digite o seu sobrenome" type="text">
+                    <span id="textInput" style="margin-top: 7px">E-mail</span>
+                    <input id="campo-login" placeholder="Digite o seu e-mail" type="text">
+                    <span id="textInput" style="margin-top: 7px">Senha</span>
+                    <input id="campo-login" placeholder="Digite a sua senha" type="password">
+                    <span id="lembrarDados"><input type="checkbox" id="checkboxDados">Concordo com os <a onclick="abrirTermos()" style="color: rgba(212, 35, 35, 0.801); cursor: pointer;">Termos de Uso</a></span>
+                    <button id="btnLogin"><a href="dashboard/dashboard.html">Registrar Conta</b></a></button>
+                    <span class="text-center">Já possui uma conta?<a onclick="fecharRegistro()" style="color: rgba(212, 35, 35, 0.801); cursor: pointer;"> Faça login!</a></span>
+                </div>
+            </div>
+    </div>
+
+     <!-- Declaração JS --> 
+
+     <script>
+
+         function abrirRegistro() {
+            $('#card').attr('class', 'd-none'); 
+            $('#card-registro').attr('class', 'd-flex flex-column');
+            $('#imgBanner').attr('src', '../imgs/SVG/Mobile login-pana.svg');
+         }
+
+         function fecharRegistro() {
+            $('#card-registro').attr('class', 'd-none')
+            $('#card').attr('class', 'd-flex flex-column')
+            $('#imgBanner').attr('src', '../imgs/SVG/Taking notes-amico.svg');
+         }
+
+         function abrirTermos() {
+            $('#exampleModal').modal('show')
+         }
+
+         function fecharTermos() {
+            $('#exampleModal').modal('hide')
+         }
+
+     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
