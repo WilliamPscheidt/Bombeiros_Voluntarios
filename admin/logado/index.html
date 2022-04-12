@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/dashboard-admin.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Admin | Add Admins</title>
+    <title>Admin | Add Perguntas</title>
 </head>
 <body>
 
@@ -66,29 +66,85 @@
         <main class="container">
             <div class="row d-flex justify-content-center" style="margin-top: 30px;">
                 <div class="col-12 col-md-12 p-3 bg-light" id="dashboard-card">
-                    <h1 id="tituloGráfico"><svg style="margin-left: 2px; margin-bottom: 2px" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M8,11 C10.7614237,11 13,8.76142375 13,6 C13,3.23857625 10.7614237,1 8,1 C5.23857625,1 3,3.23857625 3,6 C3,8.76142375 5.23857625,11 8,11 Z M13.0233822,13.0234994 C11.7718684,11.7594056 10.0125018,11 8,11 C4,11 1,14 1,18 L1,23 L8,23 M10,19.5 C10,20.88 11.12,22 12.5,22 C13.881,22 15,20.88 15,19.5 C15,18.119 13.881,17 12.5,17 C11.12,17 10,18.119 10,19.5 L10,19.5 Z M23,15 L20,12 L14,18 M17.5,14.5 L20.5,17.5 L17.5,14.5 Z"/></svg>
-                        Gerenciar Acesso de Administrador</h1>
-                    
-                        <div class="input-group" style="margin-top: 30px;">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Digite o e-mail do usuário</span>
-                            </div>
-                            <input type="text" class="form-control">
-                        </div>
+                    <h1 id="tituloGráfico"><svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 9" id="Layer_9"><path d="M25.05,7.64,21.36,4a3.21,3.21,0,0,0-2.29-1H9.24A3.25,3.25,0,0,0,6,6.24V25.76A3.25,3.25,0,0,0,9.24,29H22.76A3.25,3.25,0,0,0,26,25.76V9.93A3.21,3.21,0,0,0,25.05,7.64ZM23.59,9H20V5.41ZM24,25.76A1.25,1.25,0,0,1,22.76,27H9.24A1.25,1.25,0,0,1,8,25.76V6.24A1.25,1.25,0,0,1,9.24,5H18v5a1,1,0,0,0,1,1h5Z"/><path d="M13,16.29a1,1,0,0,0-1.42,1.42l2.5,2.5a1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,19,13.79l-4.29,4.3Z"/></g></svg>Adicionar Perguntas</h1>
 
-                        <div class="input-group mb-3" style="margin-top: 30px;">
-                            <div class="input-group-prepend" >
-                              <label class="input-group-text" for="inputGroupSelect01" style="padding-right: 47px;">Escolha uma Opção</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Escolha</option>
-                              <option value="adicionarAdmin">Adicionar privilegios administrativos</option>
-                              <option value="removerAdmin">Remover privilegios administrativos</option>
-                            </select>
+                    <div class="input-group mb-3" style="margin-top: 30px;">
+                        <input type="text" class="form-control" placeholder="Titulo do Simulado" aria-label="" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group" style="margin-top: 30px;">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Digite a Pergunta</span>
                         </div>
-                    
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group mb-3" style="margin-top: 30px;">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                        </div>
+                        <input type="text" placeholder="Digite a opção A" class="form-control" aria-label="Text input with checkbox">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                        </div>
+                        <input type="text" placeholder="Digite a opção B" class="form-control" aria-label="Text input with checkbox">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                        </div>
+                        <input type="text" placeholder="Digite a opção C" class="form-control" aria-label="Text input with checkbox">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                        </div>
+                        <input type="text" placeholder="Digite a opção D" class="form-control" aria-label="Text input with checkbox">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                        </div>
+                        <input type="text" placeholder="Digite a opção E" class="form-control" aria-label="Text input with checkbox">
+                    </div>
 
-                    <button style="margin-top: 20px; background: rgba(212, 35, 35, 0.801); color: white; font-weight: 100; padding: 10px; border-radius: 10px; border: none;">Concluir Alteração</button>
+                    <div class="input-group mb-3" style="margin-top: 30px;">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" for="inputGroupSelect01">Resposta Correta</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Escolha...</option>
+                          <option value="A">A</option>
+                          <option value="B">B</option>
+                          <option value="C">C</option>
+                          <option value="C">D</option>
+                          <option value="C">E</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3" style="margin-top: 30px;">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" for="inputGroupSelect01" style="padding-right: 50px;">Dificuldade</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Escolha...</option>
+                          <option value="facil">Fácil</option>
+                          <option value="moderado">Moderado</option>
+                          <option value="dificil">Dificil</option>
+                        </select>
+                    </div>
+
+                    <button style="margin-top: 20px; background: rgba(212, 35, 35, 0.801); color: white; font-weight: 100; padding: 10px; border-radius: 10px; border: none;">Adicionar Pergunta</button>
                     
                 </div>
             </div>
